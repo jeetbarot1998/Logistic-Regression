@@ -16,7 +16,6 @@ table(Y)/sum(table(Y))
 logit<- glm(Y ~ X, family=binomial (link = "logit"))
 summary(logit) 
 
-# Logit model odds ratios
 exp(logit$coefficients)
 
 # Logit model average marginal effects
